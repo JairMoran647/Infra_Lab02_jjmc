@@ -25,6 +25,9 @@ docker compose up -d
 Entornos 
 Variables
 
+```Inicializacion del API con
+docker pull nmatsui/hello-world-api
+```
 ## Configuración por entorno
 
 ```
