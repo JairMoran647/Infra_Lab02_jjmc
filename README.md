@@ -7,8 +7,12 @@ API
   - Minimal API
     - Debe retornar un mensaje incluyendo mi nombre
   - Docker
-- docker run -d --rm -p 3000:3000 nmatsui/hello-world-api.  8c446d43dfc9 focused_wilson
-docker run -d --rm -p 3001:3000 nmatsui/hello-world-api  sweet_sammet
+  - Creacion de Dockers 1, 2 y 3 con su respectivo ID y nombre
+6b218b1c2930   postgres:13               "docker-entrypoint.s…"   36 seconds ago   Up 28 seconds   5432/tcp                                      lab02jjmc-db-1
+1abe7c15739e   nmatsui/hello-world-api   "/sbin/tini -- npm s…"   37 seconds ago   Up 27 seconds   0.0.0.0:3000->3000/tcp, [::]:3000->3000/tcp   api01
+0e384683b261   nmatsui/hello-world-api   "/sbin/tini -- npm s…"   37 seconds ago   Up 28 seconds   0.0.0.0:3002->3000/tcp, [::]:3002->3000/tcp   api03
+07ef5200cd39   nmatsui/hello-world-api   "/sbin/tini -- npm s…"   37 seconds ago   Up 29 seconds   0.0.0.0:3001->3000/tcp, [::]:3001->3000/tcp   api02
+
 
 BD
   - PostgreSQL
