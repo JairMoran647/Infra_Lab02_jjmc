@@ -4,31 +4,35 @@ services:
 
   app1:
     container_name: api01
-    image: nmatsui/hello-world-api
+    build: ./api
     ports:
       - "3000:3000"
     environment:
-      - MESSAGE=Hola desde el api 1
+      - MESSAGE= Moran Carbonel Jair compilado 3000
+
 
   app2:
     container_name: api02
-    image: nmatsui/hello-world-api
+    build: ./api
     ports:
       - "3001:3000"
     environment:
-      - MESSAGE=Hola desde el api 2
+      - MESSAGE= Moran Carbonel Jair compilado 3001
 
   app3:
     container_name: api03
-    image: nmatsui/hello-world-api
+    build: ./api
     ports:
       - "3002:3000"
     environment:
-      - MESSAGE=Hola desde el api 3
+      - MESSAGE= Moran Carbonel Jair compilado 3002
+
 
   db:
     image: postgres:13
     environment:
-      POSTGRES_USER: user
-      POSTGRES_PASSWORD: password
-      POSTGRES_DB: mydatabase
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+      voulme:
+        - db_data:/var/lib/postgresql/data
