@@ -7,18 +7,24 @@ services:
     image: nmatsui/hello-world-api
     ports:
       - "3000:3000"
+    environment:
+      - MESSAGE=Hola desde el api 1
 
   app2:
     container_name: api02
     image: nmatsui/hello-world-api
     ports:
       - "3001:3000"
+    environment:
+      - MESSAGE=Hola desde el api 2
 
   app3:
     container_name: api03
     image: nmatsui/hello-world-api
     ports:
       - "3002:3000"
+    environment:
+      - MESSAGE=Hola desde el api 3
 
   db:
     image: postgres:13
