@@ -72,6 +72,8 @@ ID 000284492
 
 # Imagenes 
 
+Crearemos una carpeta para las capturas que evidencian mi trabajo
 
+la cual se llama capturas
 
-
+Gracias por su atencion .
