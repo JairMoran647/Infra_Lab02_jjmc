@@ -34,5 +34,10 @@ services:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       POSTGRES_DB: ${POSTGRES_DB}
-      voulme:
-        - db_data:/var/lib/postgresql/data
+    volumes:
+      - postgrades_data:/var/lib/postgresql/data
+
+
+
+volumes:
+  postgrades_data:
